@@ -33,3 +33,11 @@ import math
 pi=math.pi
 exp=math.exp
 ```
+
+### Function fit to the greens fn
+```python
+def func2(params, x, y):
+    a,b,c,d,e=params[0], params[1], params[2],params[3], params[4]
+    residual=y-(a*np.exp(b*x**2-c*x-d)+e)
+    return residual
+```
